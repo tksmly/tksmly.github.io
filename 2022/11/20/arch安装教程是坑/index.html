@@ -18,7 +18,7 @@
 <meta property="og:description" content="某个知名arch安装教程在其中有这么一段 systemctl enable --now dhcpcd 这没什么,挺正常的 但是,在后面安装完桌面后 1234sudo systemctl disable iwd # 确保 iwd 开机处于关闭状态，因为其无线连接会与 NetworkManager 冲突sudo systemctl stop iwd # 立即关闭 iwdsudo systemctl e">
 <meta property="og:locale" content="zh_CN">
 <meta property="article:published_time" content="2022-11-20T13:23:10.000Z">
-<meta property="article:modified_time" content="2022-11-20T13:55:53.235Z">
+<meta property="article:modified_time" content="2022-11-21T04:47:23.610Z">
 <meta property="article:author" content="tksmly">
 <meta property="article:tag" content="摸鱼, tksmly">
 <meta name="twitter:card" content="summary">
@@ -27,13 +27,13 @@
 <link rel="stylesheet" href="/lib/mdui_043tiny/mdui.css">
 
 
-    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1668954184909">
+    <link rel="stylesheet" href="/lib/iconfont/iconfont.css?v=1669006215411">
     
-    <link rel="stylesheet" href="/css/style.css?v=1668954184909">
+    <link rel="stylesheet" href="/css/style.css?v=1669006215411">
 
     
         
-            <link rel="stylesheet" href="/custom.css?v=1668954184909">
+            <link rel="stylesheet" href="/custom.css?v=1669006215411">
         
     
 <meta name="generator" content="Hexo 6.3.0"></head>
@@ -222,7 +222,7 @@
         <a class="nexmoefont icon-calendar-fill">2022年11月20日</a>
         
         
-    <a><i class="nexmoefont icon-areachart"></i>约132字</a>
+    <a><i class="nexmoefont icon-areachart"></i>约144字</a>
     <a><i class="nexmoefont icon-time-circle-fill"></i>预计需要1分钟</a>
 
     </div>
@@ -239,8 +239,9 @@
 <p>但是,在后面安装完桌面后</p>
 <figure class="highlight sh"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br></pre></td><td class="code"><pre><code class="hljs sh">sudo systemctl <span class="hljs-built_in">disable</span> iwd <span class="hljs-comment"># 确保 iwd 开机处于关闭状态，因为其无线连接会与 NetworkManager 冲突</span><br>sudo systemctl stop iwd <span class="hljs-comment"># 立即关闭 iwd</span><br>sudo systemctl <span class="hljs-built_in">enable</span> --now NetworkManager <span class="hljs-comment"># 确保先启动 NetworkManager，并进行网络连接。若 iwd 已经与 NetworkManager 冲突，则执行完上一步重启一下电脑即可</span><br>ping www.bilibili.com <span class="hljs-comment"># 测试网络连通性</span><br></code></pre></td></tr></table></figure>
 
+<p>是的,dhcpd没有关闭</p>
+<p>我不理解,但我大为震撼</p>
 
-<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><code class="hljs python"><span class="hljs-built_in">print</span>(<span class="hljs-string">&quot;Hello, World!&quot;</span>)<br></code></pre></td></tr></table></figure>
     <p><img data-fancybox="gallery" src="/img/index.jpg"  alt="一个图片" data-caption="给点钱吧爷爷" loading="lazy"></p> 下面是评论区DA☆ZE
   </article>
 
@@ -264,7 +265,7 @@
 
   
       <div class="nexmoe-post-footer">
-          <script src="https://beaudar.lipk.org/client.js" repo="tksmly/tksmly.github.io" branch="main" issue-term="title" label="bot" theme="github-light" comment-order="desc" input-position="top" crossorigin="anonymous" async> </script>
+          <script src="https://beaudar.lipk.org/client.js" repo="tksmly/tksmly.github.io" branch="main" issue-term="喵呜~~" theme="github-light" comment-order="desc" input-position="top" crossorigin="anonymous" async> </script>
       </div>
   
 </div>
@@ -309,7 +310,7 @@
 
  
 
-<script async src="/js/app.js?v=1668954184912"></script>
+<script async src="/js/app.js?v=1669006215413"></script>
 
 
 
